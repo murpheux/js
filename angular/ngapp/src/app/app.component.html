@@ -25,3 +25,9 @@
 <ul *ngFor="let lang of languages; let i = index; let even = even">
   <li *ngIf="even">{{i+2}}. {{lang.name}} - {{lang.type}}</li>
 </ul>
+
+<div>
+  1 + 1 = <input type="text" [value]="result">
+</div>
+{{result}}
+<button (click)="changeValue()">Change val</button>

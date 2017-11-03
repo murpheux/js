@@ -9,6 +9,14 @@ export class AppComponent {
   title = 'app';
   visible = true;
   counter = 0;
+  result = 1 + 1;
+
+
+  constructor() {
+  	setTimeout(() => {
+  		this.result = 50;
+  	}, 10000);
+  }
 
   myfavLang = {
   	'frontend' : ['html', 'css', 'javascript'],
@@ -26,5 +34,9 @@ export class AppComponent {
   toggleDiv(){
   	this.visible = !this.visible;
   	this.counter++; 
+  }
+
+  changeValue() {
+  	this.result++;
   }
 }

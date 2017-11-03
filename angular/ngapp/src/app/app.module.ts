@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { MainComponent } from './main/main.component';
 import { BlouColorDirective } from './blou-color.directive';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BlouColorDirective } from './blou-color.directive';
     FooterComponent,
     MenuComponent,
     MainComponent,
-    BlouColorDirective
+    BlouColorDirective,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
