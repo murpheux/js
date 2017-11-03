@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.header
+{
+	text-align: center;
+}
+
+.footer {
+	position:absolute;
+	bottom:0;
+	display: block;
+    /*height: 100px;*/
+    background: #eee;
+    width: 100%;
+    text-align: center;
+}

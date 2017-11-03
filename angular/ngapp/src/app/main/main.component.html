@@ -1,0 +1,23 @@
+<p>
+  Using: {{name}}
+</p>
+
+<div *ngIf="1==1">this may show</div>
+<p>My list: {{DOW.length}} items in array!</p> 
+<ul>
+	<li *ngFor="let myd of DOW; let i = index">{{i}} - {{myd}}</li>
+</ul>
+
+
+<br>
+
+A Table
+<table>
+	<tr *ngFor="let hero of heroes; let i = index">
+		<td>{{i}}</td>
+    	<td>{{hero.name}}</td>
+	</tr>
+</table>
+
+
+

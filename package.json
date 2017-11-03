@@ -1,0 +1,13 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "my javascript codes",
+  "main": "index.js",
+  "author": "Clement Onawole<dapo.onawole@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "npx": "^9.7.1"
+  }
+}

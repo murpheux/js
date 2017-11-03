@@ -1,0 +1,14 @@
+{
+  "name": "mocha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Clement Onawole",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}

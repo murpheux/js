@@ -1,0 +1,27 @@
+
+<app-header></app-header>
+<app-menu></app-menu>
+<app-main></app-main>
+<app-footer></app-footer>
+<div style="text-align: center;">
+  <h1 appBlouColor>My Base</h1>
+</div>
+
+<div *ngIf="visible;then evenClicked else oddClicked">ngIf works</div>
+<button (click)="toggleDiv()">Toggle</button>
+
+<ng-template #oddClicked>odd number of clicks</ng-template>
+<ng-template #evenClicked>even number of clicks</ng-template>
+
+
+<div *ngIf="counter % 2 == 0; let randomVar">
+  Yep!{{randomVar}}
+</div>
+
+<div *ngIf="myfavLang.frontend; let frontendlang">
+  Lang: {{frontendlang}}
+</div>
+
+<ul *ngFor="let lang of languages; let i = index; let even = even">
+  <li *ngIf="even">{{i+2}}. {{lang.name}} - {{lang.type}}</li>
+</ul>
