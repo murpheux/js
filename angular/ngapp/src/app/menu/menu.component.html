@@ -1,1 +1,7 @@
-<a href="">Home</a> | 
+<div class="menu">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a> |
+    <a routerLink="dashboard" routerLinkActive="active">Dashboard</a> |
+    <a *ngIf="!isUserLoggedIn()" routerLink="login" routerLinkActive="active">Login</a>
+    <a *ngIf="isUserLoggedIn()" routerLink="" routerLinkActive="active" (click)="logOut()">Logout</a> |
+    <a routerLink="about" routerLinkActive="active">About</a>
+</div>

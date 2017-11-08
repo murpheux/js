@@ -1,0 +1,34 @@
+<div style="text-align: left;">
+  <h3 appBlouColor>Dashboard</h3>
+</div>
+
+<div *ngIf="visible;then evenClicked else oddClicked">ngIf works</div>
+<button (click)="toggleDiv()">Toggle</button>
+
+<ng-template #oddClicked>odd number of clicks</ng-template>
+<ng-template #evenClicked>even number of clicks</ng-template>
+
+
+<div *ngIf="counter % 2 == 0; let randomVar">
+  Yep!{{randomVar}}
+</div>
+
+<div *ngIf="myfavLang.frontend; let frontendlang">
+  Lang: {{frontendlang}}
+</div>
+
+<ul *ngFor="let lang of languages; let i = index; let even = even">
+  <li *ngIf="even">{{i+2}}. {{lang.name}} - {{lang.type}}</li>
+</ul>
+
+<div>
+  1 + 1 = <input type="text" [value]="result" (keydown)="myKeydown($event)">
+</div>
+{{result}}
+<button (click)="changeValue()">Change val</button>
+
+<br/>
+{{username}}
+<div>
+  <input type="text" [(ngModel)]="username" />
+</div>

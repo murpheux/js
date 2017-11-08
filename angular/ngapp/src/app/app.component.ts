@@ -6,37 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  visible = true;
-  counter = 0;
-  result = 1 + 1;
-
-
-  constructor() {
-  	setTimeout(() => {
-  		this.result = 50;
-  	}, 10000);
-  }
-
-  myfavLang = {
-  	'frontend' : ['html', 'css', 'javascript'],
-  	'backend' : ['nodejs', 'php', 'python', 'ruby']
-  }
-
-  languages = [
-  	{'name' : 'html', 'type' : 'frontend'},
-  	{'name' : 'css', 'type' : 'frontend'},
-  	{'name' : 'js', 'type' : 'frontend'},
-  	{'name' : 'ruby', 'type' : 'backend'},
-  	{'name' : 'python', 'type' : 'backend'},
-  ];
-
-  toggleDiv(){
-  	this.visible = !this.visible;
-  	this.counter++; 
-  }
-
-  changeValue() {
-  	this.result++;
-  }
+  
 }
